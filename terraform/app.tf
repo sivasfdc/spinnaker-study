@@ -10,7 +10,7 @@ variable "team-name" {
 
 resource "aws_instance" "web" {
   ami           = "ami-0d6e8758b9f426d84"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
   tags = {
     Name = var.team-name
